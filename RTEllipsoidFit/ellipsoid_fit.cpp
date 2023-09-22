@@ -130,6 +130,7 @@ int fit_ellipsoid(const char * filename_in, const char * filename_out, int mag_d
 	return 0;
 }
 
+#ifndef STATIC_BUILD
 int main(int argc, char **argv)
 {
 	if (argc < 2)
@@ -145,3 +146,5 @@ int main(int argc, char **argv)
 
 	return 0;
 }
+
+#endif
